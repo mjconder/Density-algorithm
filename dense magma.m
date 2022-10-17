@@ -9,7 +9,7 @@
 //   "error", "precision too low".        ord(B);if precision argument needs to be increased
 
 // we first load the Magma package "discrete magma"
-Load("discrete magma.m");
+load "discrete magma.m";
 
 
 // we now define the function
