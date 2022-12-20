@@ -1,8 +1,8 @@
 // The following file contains code to run the function "IsDense", which
 // determines if a two-generator subgroup of SL(2,Qp) is dense
 
-// input A, B, p, (optional: precision)	  where p is prime and A, B in SL(2, Q_p) representing
-//					  elts of PSL(2,Q_p), and precision=20 unless o/wise specified
+// input A, B, p, (optional: precision)	  where p is prime, A and B are elements of SL(2, Q_p)
+//					                      and precision=20 unless o/wise specified
 // output:
 //   true, _                              if G=<A,B> is dense in SL(2, Q_p)
 //   false, "reason"                      if G is not dense (and a reason why)
@@ -23,7 +23,8 @@ IsDense := function (A, B, p : precision:=20)
       assert A[i][j] in K and B[i][j] in K;
     end for;
 
-    // checking if G is discrete and if not then setting appropriate generators
+    // checking if the corresponding subgroup of PSL(2,Qp) is discrete
+    // if not, then we set appropriate generators for remainder of algorithm
 
     a, b := IsDiscrete(A,B,p);
     if a eq true then
