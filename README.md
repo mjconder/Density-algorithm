@@ -1,8 +1,8 @@
-# Density algorithm
+# Density algorithms
 
-The following is an implementation in Magma of an algorithm described in [1]. It takes as input a two-generator subgroup G of SL(2,Q_p) (where Q_p denotes the p-adic numbers) and determines whether or not G is dense.
+The following contains implementations in Magma of two algorithm described in [1]. It takes as input two elements A and B of either SL(2,R) or SL(2,Q_p) (where Q_p denotes the p-adic numbers) and determines whether or not the subgroup G=<A,B> is dense.
 
-This code requires the implementation of the discreteness algorithm https://github.com/mjconder/Discrete-algorithm 
+These two algorithms require the discreteness algorithms given in  https://github.com/mjconder/Discrete-algorithm and http://www.math.rwth-aachen.de/~Markus.Kirschmer/magma/sl2r.html respectively
 
 # References
 
