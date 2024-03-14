@@ -1,7 +1,7 @@
 // The following file contains code to run the function "IsDense", which
 // determines if a two-generator subgroup of SL(2,Qp) is dense
 
-// input A, B, p, (optional: precision)	  where p is prime, A and B are elements of SL(2, Q_p)
+// input A, B, p, (optional: precision)	  where p>5 is prime, A and B are elements of SL(2, Q_p)
 //					                      and precision=20 unless o/wise specified
 // output:
 //   true, _                              if G=<A,B> is dense in SL(2, Q_p)
